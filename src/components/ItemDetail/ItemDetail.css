@@ -1,0 +1,12 @@
+
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 2rem;
+}
+
+.detail-img {
+    width: 100%;
+}

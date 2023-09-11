@@ -1,0 +1,11 @@
+
+.footer-flex{
+    background-color: rgb(238, 182, 238);
+    margin: 0;
+    padding-left: 10px;
+}
+
+.social-medias p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
