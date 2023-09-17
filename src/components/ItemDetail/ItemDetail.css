@@ -1,12 +1,43 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Inclusive+Sans&family=Quicksand:wght@300&display=swap');
 
 .content{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
+    /*flex-wrap: wrap;*/
+    
+    width: 100%;
     margin: 2rem;
 }
 
 .detail-img {
-    width: 100%;
+    /*max-width: 300vw;*/
+    max-height: 60vh;
 }
+
+.img-desp{
+    display: flex;
+}
+.Detalles{
+    margin-left: 15px;
+}
+
+/*otra forma de colocar estilos 'como en carpetas'*/
+.content .img-desp .Detalles .description{
+    background-color:#f5e8d7;
+    max-width: 60%;
+}
+
+.titulo {
+    /*font-family: 'Inclusive Sans', sans-serif;*/
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.description {
+
+font-family: 'Quicksand', sans-serif;
+font-size: 1.5rem;
+}
+
+.precio {
+    
+    font-family: 'Heebo', sans-serif;
+} 

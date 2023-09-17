@@ -8,11 +8,34 @@ const CartProvider = ({children}) => {
     const ClearCart = () => setCart([]);
     const IsInCart = (id) => cart.find(product => product.id === id) ? true : false;
     const RemoveProduct = (id) => setCart(cart.filter(product => product.id !== id))
+    const AddProduct = (item, cantidad) => {
+        if(IsInCart(item.id) ){
+            setCart(cart.map(product => {
+                return product.id === item.id ? {...product, cantidad : product.cantidad + cantidad} : product
+            } ))
+        
+    }else{
+        setCart([...cart,{ ...item , cantidad: cantidad }]);
+    }
+
+}
+
+const TotalPrice = () => {
+    return cart.reduce((previo, actual) => previo + actual.cantidad * actual.price, 0);
+}
+
+const TotalProduct = () => {
+    return cart.reduce ((acumulador, productoActual) => acumulador + productoActual.cantidad, 0);
+
+}
     return(
         <CartContext.Provider value={{
             ClearCart, 
             IsInCart,
             RemoveProduct,
+            AddProduct,
+            TotalPrice,
+            TotalProduct,
             cart
         }
         }>

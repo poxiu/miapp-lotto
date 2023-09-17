@@ -1,7 +1,29 @@
 .counter {
     width: 100px;
-    background-color: rgb(163, 146, 163);
+    background-color: white;
     margin: auto;
-    padding: 1rem;
     text-align: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.bolsa{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botones {
+    border: none;
+    background-color: white;
+
 }
