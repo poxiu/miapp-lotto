@@ -8,10 +8,14 @@ export const Item = ({info}) => {
     return (
         <>
         <Link to={`/detalle/${info.id}`} className="item">
-        <div>
+        <div className="item-card">
             <img src={info.image} />
+            
             <p>{info.title}</p>
-            <p>{info.description}</p>
+            {/*<li><p>{info.description}</p></li>*/}
+            <p>{info.price + ' ' + 'Bs.'}</p>
+            
+            
         </div>
         </Link>
         

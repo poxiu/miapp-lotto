@@ -7,17 +7,11 @@ export const NavBar = () => {
     return (
         <>
         
-        <nav className="container">
-                <div className="titulo">
+        <nav>
                     <NavLink to='/'>Lotto</NavLink>
-                </div>
-
-                <ul className="menu">
-                    <li><NavLink to='/categoria/vela'>Velas</NavLink></li>
-                    <li><NavLink to='/categoria/jabones'>Jabones</NavLink></li>
-                    <li><NavLink to='cart'><CartWidget/></NavLink></li>
-                </ul>
-                
+                    <NavLink to='/categoria/vela'>Velas</NavLink>
+                    <NavLink to='/categoria/jabones'>Jabones</NavLink>
+                    <NavLink to='cart'><CartWidget/></NavLink>
         </nav>
         </>
     )

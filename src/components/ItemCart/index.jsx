@@ -26,7 +26,7 @@ export const ItemCart = ({product}) => {
             </div>
             
             <div>
-            <button className="boton-borrar"onClick={() => RemoveProduct(product.id)}></button>
+            <button className="boton-borrar" onClick={() => RemoveProduct(product.id)}></button>
             </div>
             
 

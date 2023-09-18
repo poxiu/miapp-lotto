@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart';
 import CartProvider from './CartContext/index';
+import Cards from './components/Cards/Cards';
 export const CartContext = React.createContext([]);
 //CartContext.Provider.value = {('Elva')}
 console.log('CartContext', CartContext);
@@ -22,9 +23,10 @@ function App() {
         <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
         <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
         <Route path="/cart" element={<Cart />} />
+        
       </Routes>
     </CartProvider>
-      
+
     </BrowserRouter>
     
     </>
