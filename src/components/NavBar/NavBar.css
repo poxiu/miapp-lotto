@@ -1,9 +1,12 @@
-
 nav {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    color: black;
+    
+}
+
+nav .categoria {
     font-weight: bold;
-    text-decoration: none; /*no se guardan los cambios*/
+    color: black;
+    text-decoration: none;
 }

@@ -7,12 +7,16 @@ export const NavBar = () => {
     return (
         <>
         
-        <nav>
-                    <NavLink to='/'>Lotto</NavLink>
-                    <NavLink to='/categoria/vela'>Velas</NavLink>
-                    <NavLink to='/categoria/jabones'>Jabones</NavLink>
-                    <NavLink to='cart'><CartWidget/></NavLink>
-        </nav>
+            <nav>
+                    <NavLink className="categoria" to='/'>LOTTO</NavLink>
+                    {/*<NavLink className="categoria" to='/categoria/vela'>VELAS</NavLink>
+                    <NavLink className="categoria" to='/categoria/jabones'>JABONES</NavLink>*/}
+                    <NavLink className="categoria" to='/tienda'>TIENDA</NavLink>
+                    <NavLink className="categoria" to='/about'>ABOUT</NavLink>
+                    <NavLink className="categoria" to='/contacto'>CONTACTO</NavLink>
+                    
+            </nav>
+                    
         </>
     )
 }
