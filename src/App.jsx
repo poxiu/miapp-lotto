@@ -2,14 +2,16 @@
 import './App.css';
 import ItemListContainer from './components/ItemListContainer';
 import React from 'react';
-import NavBar from './components/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart';
 import CartProvider from './CartContext/index';
 import Cards from './components/Cards/Cards';
 import ItemDetail from './components/ItemDetail';
-import Main from './components/Main';
+import NavBar2 from './components/Navbar2';
+import Contenido from './components/Contenido';
+import About from './components/About';
+import Contacto from './components/Contacto';
 export const CartContext = React.createContext([]);
 //CartContext.Provider.value = {('Elva')}
 console.log('CartContext', CartContext);
@@ -19,12 +21,14 @@ function App() {
     <BrowserRouter>
 
     <CartProvider>
-    <NavBar/>
+    <NavBar2/>
       <Routes>
-        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/" element={<Contenido/>} />
         <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
         <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
-        <Route path="/tienda" element={<Main />} />
+        <Route path="/tienda" element={<ItemListContainer/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contacto" element={<Contacto/>} />
         <Route path="/cart" element={<Cart />} />
         
       </Routes>

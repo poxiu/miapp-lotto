@@ -23,13 +23,21 @@ export const Main = () => {
                     </div>   
 
                     <div class="cualidades">
-                                    <div class="linea"></div>
-                                    <p> <span class="numCualidad"> 01</span> Produccion artesanal responsable </p>
-                                    <div class="linea"></div>
-                                    <p> <span class="numCualidad"> 02</span> Cera 100% vegetal de soya </p>
-                                    <div class="linea"></div>
-                                    <p> <span class="numCualidad" > 03</span> Esencias Naturales</p>
-                                    <div class="linea"></div>
+                        <div class="linea"></div> {/*lines */}
+
+                        <p> <span class="numCualidad">01</span> Produccion artesanal responsable </p> {/*texto */}
+
+                        <div class="linea"></div> {/*lines */}
+
+                        <p> <span class="numCualidad">02</span> Cera 100% vegetal de soya </p> {/*texto */}
+
+                        <div class="linea"></div> {/*lines */}
+
+                        <p> <span class="numCualidad">03</span> Esencias Naturales</p> 
+                        {/*texto */}
+        
+                        <div class="linea"></div> {/*lines */}
+
                     </div>
                 </div>    
         </div>

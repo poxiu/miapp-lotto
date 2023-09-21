@@ -1,0 +1,56 @@
+.about {
+    padding: 5em 5em 3.1em 5em;
+    margin: 0em;
+    border: 0em;
+    background-image: url('./fondito.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "titulo"
+        "imagenes"
+        "contexto";
+}
+
+.titulo {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5;
+    text-align: center;
+
+    grid-area: titulo;
+}
+
+.contexto {
+    margin-top: 2em;
+    font-size: 1em;
+    grid-area: contexto;
+    align-self: start;
+}
+
+.imagenes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    grid-area: imagenes;
+}
+
+.peque {
+    max-height: 250px;
+    width: auto;    
+}
+
+.mediano {
+    max-height: 350px;
+    width: auto;    
+}
