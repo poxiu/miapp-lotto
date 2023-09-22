@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import {useParams} from "react-router-dom";
 import Title from "../Title";
 import ItemList from "../ItemList";
-
+import './ItemListContainer.css';
+import TitleTienda from "../TitleTienda";
+// lo que aparece en la tienda, productos en general
 const productos = [
-    {id:1, image:'https://www.eltigreazul.com.ar/wp-content/uploads/2020/06/Vela-aromatica-apotheke-5.jpg', title:'Tilo y Lavanda', categoria:'vela', categoria:'vela', price: 50}, 
+    {id:1, image:'https://acdn.mitiendanube.com/stores/438/112/products/julia-julio-velatiloylavanda21-0e5ef46a51b75b9cbd16152196656630-240-0.jpg', title:'Tilo y Lavanda', categoria:'vela', categoria:'vela', price: 50}, 
 
-    {id:2, image:'https://www.eltigreazul.com.ar/wp-content/uploads/2020/06/Vela-aromatica-apotheke-4.jpg', title:'Vainilla', categoria:'vela', price: 50},
+    {id:2, image:'https://acdn.mitiendanube.com/stores/438/112/products/julia-julio-velatiloylavanda111-ea9948d841cc57896116152196656419-240-0.jpg', title:'Vainilla', categoria:'vela', price: 50},
 
-    {id:3, image:'https://acdn.mitiendanube.com/stores/983/987/products/botane-velas-web-9dic2020-151-3825fe1eb1f0a4c25716080006690508-640-0.jpg', title:'Jazmin Blanco', categoria:'vela', price: 50},
+    {id:3, image:'https://www.eltigreazul.com.ar/wp-content/uploads/2016/11/Apotheke-Nuevas-Velas-Vidrio-Sprays-Septiembre-2023-Cuadrado-14.jpg', title:'Jazmin Blanco', categoria:'vela', price: 50},
 
     {id:4, image:'https://cosmeticapedroches.com/wp-content/uploads/2018/01/Beneficios-del-jabon-artesanal.jpg', title:'Jabón de Jazmin', categoria:'jabones', price: 50},
 
@@ -35,9 +37,12 @@ export const ItemListContainer = ({texto}) => {
 
     return (
         <>
-        <Title greeting={<h1>ONLINE SHOP</h1>}/>
+        <TitleTienda/>
         
-        <ItemList data={data}/>
+        <div className="contenedor">
+            <ItemList data={data}/>
+        </div>
+        
         </>
     )
 }

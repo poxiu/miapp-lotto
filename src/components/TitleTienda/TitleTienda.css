@@ -1,0 +1,14 @@
+.contenedor-tienda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding: 5em 0;*/
+    padding: 5em 5em 0em 5em;
+}
+
+.contenedor-cosas .titulo-onlineshop {
+    font-weight: bold;
+    text-align: center;
+    /*justify-content: center;
+    align-items: center;*/
+}

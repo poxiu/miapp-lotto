@@ -12,7 +12,6 @@ export const Item = ({info}) => {
                 <div className="item-card">
                     <img src={info.image} />
                     <p className="title-producto">{info.title}</p>
-                    {/*<li><p>{info.description}</p></li>*/}
                     <p className="title-price">{info.price + ' ' + 'Bs.'}</p>
                 </div>
             </Link>
