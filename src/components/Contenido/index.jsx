@@ -1,16 +1,17 @@
 import React from "react";
 import './contenido.css';
-import hoja from './hoja.png';
-import vela from './vela.png';
-import reconocimiento from './reconocimiento.png';
+import hoja from '../imagenes/leaf-ios.png';
+import vela from '../imagenes/vela.png';
+import reconocimiento from '../imagenes/estrella.png';
 import Cards from "../Cards/Cards";
+import Arrow from "../Arrow";
+import { NavLink } from "react-router-dom";
 
 export const Contenido = () => {
   return (
     <>
 
       <div className="primeraParte">
-
         {/*CONTENIDO CENTRAL*/}             
           <div className="titulos">
             <h1 id="nombre">Lotto.</h1>
@@ -45,8 +46,9 @@ export const Contenido = () => {
 
 
             {/* IMAGENES */}
-            <div className="cualidadesImagen">
-              
+
+
+            {/* <div className="cualidadesImagen">
                 <div className="img1">
                   <img src={hoja} alt=""/>
                   <h3> Vegano, libre de crueldad animal</h3>
@@ -60,40 +62,13 @@ export const Contenido = () => {
                 <div className="img3">
                   <img src={reconocimiento} alt=""/>
                   <h3> Pedidos especiales</h3>
-              </div>
-
-
-                <Cards/>
-            </div>
-
+                </div>
+            </div>*/}
+            {/*<Cards/>*/}
       </div>
       
 
-      {/*SEGUNDA PARTE*/}
-      <div className="segundaParte">
-           {/* TEXTO*/}
-            <div className="textoDescripcion">
-                <p>Velas naturales, sensaciones naturales.</p>
-                <p>Dejate envolver por los aromas y los colores de las velas naturales que estimulan tus sentidos
-                </p>
-            </div>
-            
-            <div className="elaborado">
-                <p> Hecho en Bolivia</p>
-            </div>
-            {/*REDES SOCIALES */}
-            <div className="redes">
-                <p> SIGUENOS</p>
-                <div className="logitoDeRedes">
-
-                </div>
-            </div>
-            
-            {/*DERECHOS DE AUTOR XD*/}
-            <footer className="desarrolladores">
-                <p>Esta pagina fue desarrollado por <a href="#">TechQueens</a></p>
-            </footer>
-      </div>
+      
 
     </> 
   );

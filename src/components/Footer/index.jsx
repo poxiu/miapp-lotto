@@ -29,6 +29,32 @@ export const Footer = () => {
         </footer>
             
 
+
+        {/** <div className="segundaParte">
+
+            <div className="textoDescripcion">
+                <p>Velas naturales, sensaciones naturales.</p>
+                <p>Dejate envolver por los aromas y los colores de las velas naturales que estimulan tus sentidos
+                </p>
+            </div>
+            
+            <div className="elaborado">
+                <p> Hecho en Bolivia</p>
+            </div>
+            
+            <div className="redes">
+                <p> SIGUENOS</p>
+                <div className="logitoDeRedes">
+
+                </div>
+            </div>
+            
+            
+            <footer className="desarrolladores">
+                <p>Esta pagina fue desarrollado por <a href="#">TechQueens</a></p>
+            </footer>
+      </div>*/}
+        
         </>
     )
 }

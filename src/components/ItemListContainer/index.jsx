@@ -35,7 +35,7 @@ export const ItemListContainer = ({texto}) => {
 
     return (
         <>
-        <Title greeting={texto}/>
+        <Title greeting={<h1>ONLINE SHOP</h1>}/>
         
         <ItemList data={data}/>
         </>

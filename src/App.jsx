@@ -12,6 +12,7 @@ import NavBar2 from './components/Navbar2';
 import Contenido from './components/Contenido';
 import About from './components/About';
 import Contacto from './components/Contacto';
+import Footer from './components/Footer';
 export const CartContext = React.createContext([]);
 //CartContext.Provider.value = {('Elva')}
 console.log('CartContext', CartContext);
@@ -33,7 +34,7 @@ function App() {
         
       </Routes>
     </CartProvider>
-
+    
     </BrowserRouter>
     
     </>

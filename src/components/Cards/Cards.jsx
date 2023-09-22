@@ -2,26 +2,32 @@
 
 import React from "react";
 import './Cards.css';
-import hoja from "../imagenes/hoja.png";
-import vela from "../imagenes/vela.png";
-import reconocimiento from "../imagenes/reconocimiento.png";
+/* 
+import de imagenesss
+*/
+import hoja from '../imagenes/leaf-ios.png';
+import vela from '../imagenes/vela.png';
+import reconocimiento from '../imagenes/estrella.png';
+
 export const Cards = () => {
     return (
         <>
         <div class="container">
+
             <div className="img1">
-                <img src={hoja}alt="" width="200px"/>
-                <h3> Vegano, libre de crueldad animal</h3>
+                <img src={hoja}alt=""/>
+                <h3 className="texto-cards"> Vegano, libre de crueldad animal</h3>
             </div>
 
-            <div>
-                <img src={vela}alt="" width="200px"/>
-                <h3>Sin colorantes ni preservantes</h3>
+            <div className="img2">
+                <img src={vela}alt=""/>
+                <h3 className="texto-cards">
+                    Sin colorantes ni preservantes</h3>
             </div>
 
-            <div>
-                <img src={reconocimiento}alt="" width="200px"/>
-                <h3>Pedidos especiales</h3>
+            <div className="img3">
+                <img src={reconocimiento}alt=""/>
+                <h3 className="texto-cards">Pedidos especiales</h3>
             </div>
     
         </div>

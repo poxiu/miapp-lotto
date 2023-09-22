@@ -9,3 +9,9 @@
   background-size: cover;*/
 }
 
+body {
+  background-image: url('./components/imagenes/fondito.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

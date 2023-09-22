@@ -17,10 +17,10 @@ export const NavBar2 = () => {
         <nav className="nav"> 
                 <div className="nav__brand">
                     <li
-                        className={click==='Lotto' ? 'selected' :''} 
+                        className={click==='Lotto.' ? 'selected' :''} 
                         onClick={() => handleClick('Home')}
                     >
-                        <NavLink className="nav__link" to='/'> Lotto </NavLink>
+                        <NavLink className="nav__link" to='/'> Lotto. </NavLink>
                     </li>
                 </div>
                 <ul  className="nav__list">
