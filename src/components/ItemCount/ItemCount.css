@@ -1,7 +1,7 @@
 .counter {
     width: 100px;
     background-color: white;
-    margin: auto;
+    margin: 0;
     text-align: center;
     border: 1px solid black;
     display: flex;

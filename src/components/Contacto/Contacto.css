@@ -1,0 +1,28 @@
+.contacto{
+    padding: 10em 15em;
+    margin: 0em;
+    border: 0em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.correo{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.correo:hover{
+    text-decoration: underline;
+}

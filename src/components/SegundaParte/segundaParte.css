@@ -1,0 +1,34 @@
+.segundaP{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+ /* Cambia el color de fondo en la segunda parte */
+ .segundaP {
+    padding: 5vh;
+    height: 45vh;
+    display: grid;
+    grid-template-columns:  1fr; /* Divide en dos columnas */
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas:
+        "textoDescriocion"
+        "elaborado"
+        "redes";
+  }
+  
+  .textoDescripcion {
+    width: 70%;
+    font-size: 2em;
+    grid-area: textoDescriocion;
+  }
+  
+  .elaborado {
+    grid-area: elaborado;
+    display: flex;
+    align-items:center;
+  }
+  
+  .redes {
+    grid-area: redes;
+  }

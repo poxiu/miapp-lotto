@@ -31,9 +31,9 @@
     font-size: 130%;
 }
 
-.nav__link:hover{
+/*.nav__link:hover{
     text-decoration: underline;
-}
+}*/
 
 .selected {
     font-weight: bold;

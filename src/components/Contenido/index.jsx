@@ -6,6 +6,8 @@ import reconocimiento from '../imagenes/estrella.png';
 import Cards from "../Cards/Cards";
 import Arrow from "../Arrow";
 import { NavLink } from "react-router-dom";
+import Footer from "../Footer";
+import SegundaParte from "../SegundaParte";
 
 export const Contenido = () => {
   return (
@@ -48,26 +50,33 @@ export const Contenido = () => {
             {/* IMAGENES */}
 
 
-            {/* <div className="cualidadesImagen">
-                <div className="img1">
+            <div className="cualidadesImagen">
+                <div className="img-card">
                   <img src={hoja} alt=""/>
-                  <h3> Vegano, libre de crueldad animal</h3>
+                  <br></br>
+                  <br></br>
+                  <h3> Vegano, <br></br>libre de crueldad animal</h3>
                 </div>
 
-                <div className="img2">
+                <div className="img-card">
                   <img src={vela} alt=""/>
-                    <h3> Sin colorantes ni preservantes</h3>
+                  <br></br>
+                  <br></br>
+                    <h3> Sin colorantes <br></br>Sin preservantes</h3>
                 </div>
 
-                <div className="img3">
+                <div className="img-card">
                   <img src={reconocimiento} alt=""/>
-                  <h3> Pedidos especiales</h3>
+                  <br></br>
+                  <br></br>
+                  <h3> Pedidos <br></br>especiales</h3>
                 </div>
-            </div>*/}
+            </div>
             {/*<Cards/>*/}
       </div>
       
-
+      {/*<SegundaParte/>*/}
+      <SegundaParte/>
       
 
     </> 

@@ -1,11 +1,6 @@
-
-.footer-flex{
-    background-color: rgb(238, 182, 238);
-    margin: 0;
-    padding-left: 10px;
-}
-
-.social-medias p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+.desarrolladores {
+    width: 100%;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 0;
 }
